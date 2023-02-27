@@ -16,7 +16,7 @@ app.get('/status', (req, res) => {
 })
 
 app.post('/', urlencodedParser, (req, res) => {
-    console.log('Got body:', req.body);
+    console.log('Form data received:', req.body);
     res.sendStatus(200);
 });
 
